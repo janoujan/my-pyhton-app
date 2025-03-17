@@ -27,6 +27,11 @@ jobs:
           source venv/bin/activate
           pip install -r requirements.txt || true
 
+      - name: Vérifier la qualité du code avec Flake8
+        uses: py-actions/flake8@v2
+        with:
+          path: "."
+      
       - name: Executer les tests
         run: |
           source venv/bin/activate
