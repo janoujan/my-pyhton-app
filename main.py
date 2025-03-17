@@ -7,5 +7,5 @@ def multiply(x, y):
 
 
 class MyClass:
-  def __init__(self):
+    def __init__(self):
         self.value = 0
