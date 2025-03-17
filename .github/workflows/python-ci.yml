@@ -32,7 +32,10 @@ jobs:
           source venv/bin/activate
           pytest
 
-      - name: Vérifier la qualité du code avec Flake8
-        uses: py-actions/flake8@v2
+      - name: Flake8 Linting
+        # You may pin to the exact commit or the version.
+        # uses: lukacat10/Flake8@adc88b9d9801ef740cbe11426ad36714ede0326a
+        uses: lukacat10/Flake8@v5
         with:
-          path: "."
+          # Path to lint
+          path: # default is .
