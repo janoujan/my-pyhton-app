@@ -31,6 +31,7 @@ jobs:
         uses: py-actions/flake8@v2
         with:
           path: "."
+          exclude: "./venv/lib/python3.13/"
 
       - name: Executer les tests
         run: |
