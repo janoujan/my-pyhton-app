@@ -30,7 +30,7 @@ jobs:
       - name: Vérifier la qualité du code avec Flake8
         uses: py-actions/flake8@v2
         with:
-          path: "./test_main.py"
+          path: "."
 
       - name: Executer les tests
         run: |
